@@ -11,6 +11,7 @@ const messages = {
 const owl = document.getElementById('owl');
 const messageBox = document.getElementById('messageBox');
 
+
 owl.addEventListener('click', () => {
   const today = new Date().getDay();
   messageBox.textContent = messages[today];
@@ -20,6 +21,7 @@ owl.addEventListener('click', () => {
   setTimeout(() => owl.classList.remove('clicked'), 600);
 
   launchConfetti();
+
 });
 
 const canvas = document.getElementById('confetti');
